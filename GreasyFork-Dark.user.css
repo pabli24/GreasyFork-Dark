@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GreasyFork - Dark Theme
 @namespace      https://greasyfork.org/en/users/124677-pabli
-@version        1.2.7
+@version        1.2.8
 @description    Customizable Dark theme For GreasyFork.org
 @author         Pabli
 @license        CC-BY-SA-4.0
@@ -296,6 +296,10 @@ canvas {
 #deleted-note {
 	background-color: #333303;
 	border:2px dotted #ff6969;
+}
+// Admin
+.multiform-page:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 // history code
 .diff ul {
