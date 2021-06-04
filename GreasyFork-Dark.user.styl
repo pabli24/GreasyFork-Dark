@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           GreasyFork - Dark Theme
 @namespace      https://greasyfork.org/en/users/124677-pabli
-@version        1.2.8
+@version        1.2.9
 @description    Customizable Dark theme For GreasyFork.org
 @author         Pabli
 @license        CC-BY-SA-4.0
 @homepageURL    https://greasyfork.org/scripts/395180-greasyfork-dark-theme
 @supportURL     https://greasyfork.org/scripts/395180-greasyfork-dark-theme/feedback
 @preprocessor   stylus
-@var            number maxwidth "Width Site (px)" 960
+@var            number maxwidth "Width Site (px)" ['px', 960, 0, null, 1]
 @var            select theme "Syntax theme" ["Tomorrow-Night-Bright", "Tomorrow-Night-Eighties", "Tomorrow-Night-Blue", "Tomorrow-Night", "Vibrant-Ink", "Hemisu-Dark", "Tranquil-Heart", "Atelier-Cave-Dark", "Atelier-Dune-Dark", "Atelier-Estuary-Dark", "Atelier-Forest-Dark", "Atelier-Heath-Dark", "Atelier-Lakeside-Dark", "Atelier-Plateau-Dark", "Atelier-Savanna-Dark", "Atelier-Seaside-Dark", "Atelier-Sulphurpool-Dark", "Sunburst", "Desert", "Sons-Of-Obsidian"]
 @var            checkbox wrap "Code wrap" 1
 @var            checkbox scrollbar "Dark Scroll Bar" 1
@@ -33,7 +33,7 @@
 @-moz-document domain("greasyfork.org"), domain("sleazyfork.org") {
 
 .width-constraint {
-	max-width: unit(maxwidth, 'px') !important;
+	max-width: maxwidth !important;
 }
 body, .script-list, .user-list, .text-content,
 #script-info,
@@ -299,7 +299,7 @@ canvas {
 }
 // Admin
 .multiform-page:not(:last-child) {
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
+	border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 // history code
 .diff ul {
@@ -448,7 +448,6 @@ if wrap {
 	}
 }
 
-
 form.external-login-form,
 form.new_user {
 	background-color: bg;
@@ -524,7 +523,6 @@ if scrollbar {
 		scrollbar-width: thin !important;
 	}
 }
-
 
 //ads
 div#cf, div#cf span.cf-wrapper,
