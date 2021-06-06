@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/badge/Install%20directly%20with-Stylus-285959.svg" alt="Install directly with Stylus">
   </a>
   <br> or
-<a href="https://greasyfork.org/en/scripts/395180-greasyfork-dark-theme">GreasyFork</a>, 
+<a href="https://greasyfork.org/scripts/395180-greasyfork-dark-theme">GreasyFork</a>, 
 <a href="https://userstyles.world/style/144/greasyfork-dark-theme">UserStyles.world</a>
 <br>
 (To install this style you need a <a href="https://github.com/openstyles/stylus#stylus">stylus extension</a>)
