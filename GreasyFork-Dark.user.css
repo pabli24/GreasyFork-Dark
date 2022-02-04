@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GreasyFork - Dark Theme
 @namespace      https://greasyfork.org/en/users/124677-pabli
-@version        1.2.9
+@version        1.2.10
 @description    Customizable Dark theme For GreasyFork.org
 @author         Pabli
 @license        CC-BY-SA-4.0
@@ -201,9 +201,15 @@ form.new_user input[type="submit"], button, input[type="submit"]:not([value="✖
 	background-color: #222211;
 	border-left: 6px solid #a1931a;
 }
+.validation-errors,
 #version-note {
 	background-color: #4e4e0e;
 	border: 2px dotted #bfd314;
+}
+#reported-note,
+#deleted-note {
+	background-color: #333303;
+	border:2px dotted #ff6969;
 }
 
 .rating-icon-good {
@@ -291,12 +297,7 @@ canvas {
 	background-color: RGBA(255, 255, 255, 0.05);
 }
 
-#version-note,
-#reported-note,
-#deleted-note {
-	background-color: #333303;
-	border:2px dotted #ff6969;
-}
+
 // Admin
 .multiform-page:not(:last-child) {
 	border-bottom: 1px solid rgba(255, 255, 255, .1);
