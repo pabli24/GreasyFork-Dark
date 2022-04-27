@@ -1,33 +1,52 @@
 /* ==UserStyle==
 @name           GreasyFork - Dark Theme
 @namespace      https://greasyfork.org/en/users/124677-pabli
-@version        1.2.10
+@version        1.2.11
 @description    Customizable Dark theme For GreasyFork.org
 @author         Pabli
 @license        CC-BY-SA-4.0
 @homepageURL    https://greasyfork.org/scripts/395180-greasyfork-dark-theme
 @supportURL     https://greasyfork.org/scripts/395180-greasyfork-dark-theme/feedback
 @preprocessor   stylus
-@var            number maxwidth "Width Site (px)" ['px', 960, 0, null, 1]
-@var            select theme "Syntax theme" ["Tomorrow-Night-Bright", "Tomorrow-Night-Eighties", "Tomorrow-Night-Blue", "Tomorrow-Night", "Vibrant-Ink", "Hemisu-Dark", "Tranquil-Heart", "Atelier-Cave-Dark", "Atelier-Dune-Dark", "Atelier-Estuary-Dark", "Atelier-Forest-Dark", "Atelier-Heath-Dark", "Atelier-Lakeside-Dark", "Atelier-Plateau-Dark", "Atelier-Savanna-Dark", "Atelier-Seaside-Dark", "Atelier-Sulphurpool-Dark", "Sunburst", "Desert", "Sons-Of-Obsidian"]
-@var            checkbox wrap "Code wrap" 1
-@var            checkbox scrollbar "Dark Scroll Bar" 1
-@var            color bg-header "Header background" #640000
-@var            color t-header "Header text" #fafafa
-@var            color bg "Background" #111
-@var            color t-1 "Main text" #fafafa
-@var            color t-2 "Second text" #aeaeae
-@var            color t-link "Link" #ff7070
-@var            color bg-sidebar "Sidebar" #1a1a1a
-@var            color bg-sidebar-btn "Sidebar button" #510909
-@var            color bg-sidebar-btn-h "Sidebar button hover" #323232
-@var            color bg-btn "Button" #1a1a1a
-@var            color bg-btn-h "Button hover" #323232
-@var            color t-btn "Button text" #fafafa
-@var            color border-btn "Button border" rgba(255, 255, 255, 0.1)
-@var            color border-btn-h "Button border hover" rgba(255, 255, 255, 0.2)
-@var            color bg-textarea "Text area background" #1a1a1a
-@var            color bg-usercontent "User content background" rgba(0, 0, 0, 0)
+@var            number   maxwidth         "Width Site (px)"         ['px', 1200, 0, null, 1]
+@var            select   theme            "Syntax theme"            ["Tomorrow-Night-Bright", 
+                                                                     "Tomorrow-Night-Eighties", 
+                                                                     "Tomorrow-Night-Blue", 
+                                                                     "Tomorrow-Night", 
+                                                                     "Vibrant-Ink", 
+                                                                     "Hemisu-Dark", 
+                                                                     "Tranquil-Heart", 
+                                                                     "Atelier-Cave-Dark", 
+                                                                     "Atelier-Dune-Dark", 
+                                                                     "Atelier-Estuary-Dark", 
+                                                                     "Atelier-Forest-Dark", 
+                                                                     "Atelier-Heath-Dark", 
+                                                                     "Atelier-Lakeside-Dark", 
+                                                                     "Atelier-Plateau-Dark", 
+                                                                     "Atelier-Savanna-Dark", 
+                                                                     "Atelier-Seaside-Dark", 
+                                                                     "Atelier-Sulphurpool-Dark", 
+                                                                     "Sunburst", 
+                                                                     "Desert", 
+                                                                     "Sons-Of-Obsidian"]
+@var            checkbox wrap             "Code wrap"               1
+@var            checkbox scrollbar        "Dark Scroll Bar"         1
+@var            color    bg-header        "Header background"       #640000
+@var            color    t-header         "Header text"             #fafafa
+@var            color    bg               "Background"              #111111
+@var            color    t-1              "Main text"               #fafafa
+@var            color    t-2              "Second text"             #aeaeae
+@var            color    t-link           "Link"                    #ff7070
+@var            color    bg-sidebar       "Sidebar"                 #1a1a1a
+@var            color    bg-sidebar-btn   "Sidebar button"          #510909
+@var            color    bg-sidebar-btn-h "Sidebar button hover"    #323232
+@var            color    bg-btn           "Button"                  #1a1a1a
+@var            color    bg-btn-h         "Button hover"            #323232
+@var            color    t-btn            "Button text"             #fafafa
+@var            color    border-btn       "Button border"           rgba(255, 255, 255, 0.1)
+@var            color    border-btn-h     "Button border hover"     rgba(255, 255, 255, 0.2)
+@var            color    bg-textarea      "Text area background"    #1a1a1a
+@var            color    bg-usercontent   "User content background" rgba(0, 0, 0, 0)
 ==/UserStyle== */
 
 @-moz-document domain("greasyfork.org"), domain("sleazyfork.org") {
@@ -261,6 +280,9 @@ body .Pager .Highlight {
 .install-help-link, .install-link, .install-link:active, .install-link:hover, .install-link:visited,
 #install-area .install-help-link:focus, #install-area .install-help-link:hover, #install-area .install-link:focus, #install-area .install-link:hover {
 	text-decoration: none;
+}
+.modal__container {
+	background-color: bg;
 }
 // /stats script 
 canvas {
