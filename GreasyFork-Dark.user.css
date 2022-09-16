@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GreasyFork - Dark Theme
 @namespace      https://greasyfork.org/en/users/124677-pabli
-@version        1.2.12
+@version        1.2.13
 @description    Customizable Dark theme For GreasyFork.org
 @author         Pabli
 @license        CC-BY-SA-4.0
@@ -52,138 +52,141 @@
 @-moz-document domain("greasyfork.org"), domain("sleazyfork.org") {
 
 .width-constraint {
-	max-width: maxwidth !important;
+	max-width: maxwidth !important
 }
 body, .script-list, .user-list, .text-content,
 #script-info,
 body:not(.Settings), #Content {
-	background-color: bg;
-	color: t-1;
+	background-color: bg
+	color: t-1
 }
 .announcement input {
-	color: t-1;
+	color: t-1
 }
 #main-header,
 body:not(.Settings) #Head {
-	background-color: bg-header;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3), bg-header);
+	background-color: bg-header
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), bg-header)
 }
 .script-list, .user-list, .text-content,
 .list-option-group ul,
 #script-info,
 #Content {
-	box-shadow: none;
-	border: none;
+	box-shadow: none
+	border: none
 }
 a, a:visited, body:not(.Settings) a:not(.Button):not(.ChangePicture) {
-	color: t-link;
-	text-decoration: none;
+	color: t-link
+	text-decoration: none
 		&:hover {
-			color: t-link;
-			text-decoration: underline;
+			color: t-link
+			text-decoration: underline
 		}
 }
 #Head a {
-	text-decoration: none;
+	text-decoration: none
 	&:hover {
-		text-decoration: underline;
+		text-decoration: underline
 	}
 }
 #main-header, #main-header a, #main-header a:visited, #main-header a:active,
 #site-nav>nav a:hover {
-	color: t-header;
+	color: t-header
 }
 #site-name-text h1 a:hover {
-	text-decoration: none !important;
+	text-decoration: none !important
 }
 #home-script-nav {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1)
 }
 #language-selector-locale {
-	background: bg-header;
-	color: t-header;
-	border: 1px solid rgba(255, 255, 255, .5);
+	background: bg-header
+	color: t-header
+	border: 1px solid rgba(255, 255, 255, .5)
 }
 nav nav,
 .SiteMenu nav {
-	background-color: bg-header;
+	background-color: bg-header
 }
 
 textarea, textarea:focus, select, input, input.DateBox, input.InputBox, input.SmallInput, .InputBox, .Preview, input.SmallInput:focus, input.InputBox:focus,
 form.new_user input[type="text"], form.new_user input[type="email"], form.new_user input[type="password"], input[type="text"] {
-	color: t-1;
-	background: bg-textarea;
-	border: 1px solid rgba(255, 255, 255, .1);
-	outline: none;
+	color: t-1
+	background: bg-textarea
+	border: 1px solid rgba(255, 255, 255, .1)
+	outline: none
 }
 .Button, .Button.Active, .ButtonGroup.Open .Button.Handle, .Button:focus, .Button:active, .BigButton, .NewDiscussion,
 form.new_user input[type="submit"], button, input[type="submit"]:not([value="✖"]):not([value="🔎"]) {
-	background: bg-btn;
-	color: t-btn !important;
-	border: 1px solid border-btn;
-	text-decoration: none;
-	box-shadow: none;
-	cursor: pointer;
+	background: bg-btn
+	color: t-btn !important
+	border: 1px solid border-btn
+	text-decoration: none
+	box-shadow: none
+	cursor: pointer
 		&:hover {
-			background: bg-btn-h;
-			color: t-btn;
-			border-color: border-btn-h;
-			text-decoration: none;
+			background: bg-btn-h
+			color: t-btn
+			border-color: border-btn-h
+			text-decoration: none
 		}
 }
 :focus {
-	outline-style: none;
+	outline-style: none
+}
+hr {
+	border-color: rgba(255,255,255,0.1)
 }
 //search
 .sidebar-search input[type=submit], .home-search input[type=submit], .search-submit, .SiteSearch .Button {
-	color: transparent !important;
-	opacity: 1;
-	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABYklEQVQ4T5XTu2qVQRTF8d8CMdp7AW9V7MwLaNKo7+ANe1ERK7Hy2oidmOALiMlDKIIS8QEsRLFRYqG9lyBsmThHviMnB7ObGT5m/t9ae6+JQVXVAi6hrbvwFS+xmGR1eHa0T9tU1TY8xIVJh/q3JVxN8mt4ZgR41C9/wz08wSccxDlcx04sJbk8BuiyX6BdPpHk9b8qquoonnbI/NBOqmoFp3Ajyd3NLFTVLdzEcpKzf3tQVWvYh9kkH6YAZvEea0kODAE/sR0zSdanAGbwA+tJ2n6jmoX/VXAY7/A5yf4hYBmnm78kd6YouN36hJUkZ4aA+R6W7ziZ5NWEKRzrU2jSF8am0IPUQnIRDXIfj/ERh3Ae17ADXzCXpK1/ejBI4oMOmeSieqz34E3PywZkAzCqqmpSR29hb7/UQrbYR/gMR4aQMcBmDRz8YDcaZA5vcXxLgG632Rgpeb5lwADSnsCV30xRiAuwE+OqAAAAAElFTkSuQmCC') no-repeat center !important;
-	border: none !important;
-	cursor: pointer;
+	color: transparent !important
+	opacity: 1
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABYklEQVQ4T5XTu2qVQRTF8d8CMdp7AW9V7MwLaNKo7+ANe1ERK7Hy2oidmOALiMlDKIIS8QEsRLFRYqG9lyBsmThHviMnB7ObGT5m/t9ae6+JQVXVAi6hrbvwFS+xmGR1eHa0T9tU1TY8xIVJh/q3JVxN8mt4ZgR41C9/wz08wSccxDlcx04sJbk8BuiyX6BdPpHk9b8qquoonnbI/NBOqmoFp3Ajyd3NLFTVLdzEcpKzf3tQVWvYh9kkH6YAZvEea0kODAE/sR0zSdanAGbwA+tJ2n6jmoX/VXAY7/A5yf4hYBmnm78kd6YouN36hJUkZ4aA+R6W7ziZ5NWEKRzrU2jSF8am0IPUQnIRDXIfj/ERh3Ae17ADXzCXpK1/ejBI4oMOmeSieqz34E3PywZkAzCqqmpSR29hb7/UQrbYR/gMR4aQMcBmDRz8YDcaZA5vcXxLgG632Rgpeb5lwADSnsCV30xRiAuwE+OqAAAAAElFTkSuQmCC') no-repeat center !important
+	border: none !important
+	cursor: pointer
 }
 .SiteSearch .Button {
-	top: 6px;
+	top: 6px
 }
 .SearchForm .SiteSearch .Button {
-	top: 10px;
+	top: 10px
 }
 #Panel input.InputBox, .AddPeople textarea.MultiComplete {
-	border-radius: 5px;
+	border-radius: 5px
 }
 .sidebar-search input[type=search],
 .home-search input[type=search] {
-	border-radius: 5px;
-	padding: 5px;
-	padding-inline-end: 25px;
+	border-radius: 5px
+	padding: 5px
+	padding-inline-end: 25px
 }
 .sidebar-search input[type=submit],
 .home-search input[type=submit] {
-	padding: 5px;
+	padding: 5px
 }
 .SearchForm .InputBox {
-	border: 1px solid rgba(255, 255, 255, .1);
+	border: 1px solid rgba(255, 255, 255, .1)
 }
 	
 // sidebar
 .list-option-group ul,
 #Panel .FilterMenu, #Panel .PanelCategories, #Panel .MeBox,
 .list-option-groups .carbon-ad, .list-option-groups .adsense-ad {
-	border: 1px solid rgba(255, 255, 255, .1);
-	background-color: bg-sidebar;
-	box-shadow: none;
+	border: 1px solid rgba(255, 255, 255, .1)
+	background-color: bg-sidebar
+	box-shadow: none
 }
 .list-option-button {
-	background-color: bg-sidebar;
-	color: t-1 !important;
-	border: 1px solid rgba(255, 255, 255, .1);
+	background-color: bg-sidebar
+	color: t-1 !important
+	border: 1px solid rgba(255, 255, 255, .1)
 }
 .list-option-group .list-current,
 #Panel .FilterMenu .Active a, #Panel .PanelCategories .Active a {
-	border-left: none;
-	margin: unset;
-	background: bg-sidebar-btn !important;
-	color: t-1;
+	border-left: none
+	margin: unset
+	background: bg-sidebar-btn !important
+	color: t-1
 }
 .list-option-button:hover, .list-option-button:focus,
 .list-option-group a:hover, .list-option-group a:focus,
@@ -191,183 +194,183 @@ form.new_user input[type="submit"], button, input[type="submit"]:not([value="✖
 #Panel .PanelCategories a:hover,
 #Panel .FilterMenu a:focus,
 #Panel .PanelCategories a:focus {
-	background: bg-sidebar-btn-h;
-	color: t-1 !important;
-	text-decoration: none !important;
-	box-shadow: none;
+	background: bg-sidebar-btn-h
+	color: t-1 !important
+	text-decoration: none !important
+	box-shadow: none
 }
 
 #user-profile {
-	border: 1px solid rgba(255, 255, 255, .1);
-	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(255, 255, 255, .1)
+	background-color: rgba(0,0,0,0)
 }
 .change-script-set section {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1)
 }
 
 .install-link, .install-help-link {
-	color: #fff !important;
+	color: #fff !important
 }
 .script-list li:not(.ad-entry),
 .DataList .Item, .NarrowList .Item {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1)
 }
 .notice {
-	background-color: #1c2123;
-	border-left: 6px solid #204050;
+	background-color: #1c2123
+	border-left: 6px solid #204050
 }	
 .alert {
-	background-color: #222211;
-	border-left: 6px solid #a1931a;
+	background-color: #222211
+	border-left: 6px solid #a1931a
 }
 .validation-errors,
 #version-note {
-	background-color: #4e4e0e;
-	border: 2px dotted #bfd314;
+	background-color: #4e4e0e
+	border: 2px dotted #bfd314
 }
 #reported-note,
 #deleted-note {
-	background-color: #333303;
-	border:2px dotted #ff6969;
+	background-color: #333303
+	border:2px dotted #ff6969
 }
 
 .rating-icon-good {
-	border-color: #4da64d;
-	background-color: #001b00;
-	color: #ccffcc;
+	border-color: #4da64d
+	background-color: #001b00
+	color: #ccffcc
 }
 .rating-icon-ok {
-	border-color: #d3d34d;
-	background-color: #101000;
-	color: #ffffcc;
+	border-color: #d3d34d
+	background-color: #101000
+	color: #ffffcc
 }
 .rating-icon-bad {
-	border-color: #ff4d4d;
-	background-color: #290000;
-	color: #ffcccc;
+	border-color: #ff4d4d
+	background-color: #290000
+	color: #ffcccc
 }
 
 .badge-author {
-	background-color: rgba(0,128,0,0.7);
-	color: white;
+	background-color: rgba(0,128,0,0.7)
+	color: white
 }
 
 .good-rating-count {
-	color: #80ff80;
+	color: #80ff80
 }
 .ok-rating-count {
-	color: #ffff80;
+	color: #ffff80
 }
 .bad-rating-count {
-	color: #ff8080;
+	color: #ff8080
 }
 
 //pagination buttons
 .pagination>*, .script-list+.pagination>*, .user-list+.pagination>*,
 .Pager > * {
-	background-color: transparent;
+	background-color: transparent
 }
 .pagination>a:hover, .pagination>a:focus,
 .Pager > a:hover, .Pager > a:focus {
-	background-color: bg-sidebar-btn-h;
-	color: t-1 !important;
-	text-decoration: none !important;
+	background-color: bg-sidebar-btn-h
+	color: t-1 !important
+	text-decoration: none !important
 }
 body .Pager .Highlight {
-	color: t-1 !important;
+	color: t-1 !important
 }
 // install button
 .install-help-link, .install-link, .install-link:active, .install-link:hover, .install-link:visited,
 #install-area .install-help-link:focus, #install-area .install-help-link:hover, #install-area .install-link:focus, #install-area .install-link:hover {
-	text-decoration: none;
+	text-decoration: none
 }
 .modal__container {
-	background-color: bg;
+	background-color: bg
 }
 
 .post-install {
-	background-color: rgba(255, 255, 255, 0);
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0)
+	border: 1px solid rgba(255, 255, 255, 0.1)
 }
 // /stats script 
 canvas {
-	filter: invert(1) brightness(2);
+	filter: invert(1) brightness(2)
 }
 //gallery
 .jslghtbx-contentwrapper>img {
-	background: #000;
+	background: #000
 }
 .jslghtbx-prev.jslghtbx-no-img {
-	border-right-color: #aaa;
+	border-right-color: #aaa
 }
 .jslghtbx-next.jslghtbx-no-img {
-	border-left-color: #aaa;
+	border-left-color: #aaa
 }
 // feedback
 .discussion-list-item {
-	border-top: 1px solid rgba(255, 255, 255, .1);
+	border-top: 1px solid rgba(255, 255, 255, .1)
 }
 .script-discussion-list .discussion-list-item:last-child {
-	border-bottom: 1px solid rgba(255, 255, 255, .1);
+	border-bottom: 1px solid rgba(255, 255, 255, .1)
 }
 .user-content {
-	border-bottom: 1px solid rgba(255,255,255,0.1);
-	border-left: none;
-	background: bg-usercontent;
+	border-bottom: 1px solid rgba(255,255,255,0.1)
+	border-left: none
+	background: bg-usercontent
 }
 .script-list, .user-list, .text-content, .discussion-list {
-	box-shadow: none;
-	background-color: unset;
-	border: none;
+	box-shadow: none
+	background-color: unset
+	border: none
 }
 .discussion-list-logged-in .discussion-read {
-	background-color: RGBA(255, 255, 255, 0.05);
+	background-color: RGBA(255, 255, 255, 0.05)
 }
 
 
 // Admin
 .multiform-page:not(:last-child) {
-	border-bottom: 1px solid rgba(255, 255, 255, .1);
+	border-bottom: 1px solid rgba(255, 255, 255, .1)
 }
 // history code
 .diff ul {
-	background: #000;
+	background: #000
 }
 .diff li:hover {
 	background-color: rgba(255, 255, 255, .2) !important 
 }
 .diff li.del, .diff del strong {
-	background-color: rgba(255, 0, 0, .2); 
-	color: #fdd;
+	background-color: rgba(255, 0, 0, .2)
+	color: #fdd
 }
 .diff li.ins, .diff ins strong {
-	background-color: rgba(0, 255, 0, .2); 
-	color: #dfd;
+	background-color: rgba(0, 255, 0, .2)
+	color: #dfd
 }
 .diff li.diff-block-info {
-	background: none repeat scroll 0 0 #252525;
+	background: none repeat scroll 0 0 #252525
 }
 
 .DiscussionForm label {
-	color: t-2;
+	color: t-2
 }
 
 .editor-fullpage #editor-fullpage-candidate,
 .editor-fullpage #editor-fullpage-candidate .editor {
-	background-color: #000;
+	background-color: #000
 }
 
 code, .Message pre {
-	background-color: #151515;
+	background-color: #151515
 }
 pre, code, .Message pre {
-	border: 1px solid rgba(255, 255, 255, .1);
+	border: 1px solid rgba(255, 255, 255, .1)
 }
 .prettyprint {
-	font-size: 12px;
+	font-size: 12px
 }
 .code-container {
-	border: unset;
+	border: unset
 }
 
 // ace theme tomorrow_night_bright https://github.com/ajaxorg/ace/tree/master/lib/ace/theme
@@ -467,32 +470,32 @@ else if theme == Sons-Of-Obsidian {
 }
 if wrap {
 	pre.prettyprint, pre code {
-		word-break: break-word;
-		overflow-wrap: break-word;
-		white-space: pre-wrap;
+		word-break: break-word
+		overflow-wrap: break-word
+		white-space: pre-wrap
 	}
 	.prettyprint {
-		width: unset;
+		width: unset
 	}
 }
 
 form.external-login-form,
 form.new_user {
-	background-color: bg;
-	border: none;
+	background-color: bg
+	border: none
 }
 form.new_user input[type="text"], form.new_user input[type="email"], form.new_user input[type="password"] {
-	color: texxt-color;
-	background-color: textarea-color;
-	border: 1px solid rgba(255, 255, 255, .1);
-	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+	color: texxt-color
+	background-color: textarea-color
+	border: 1px solid rgba(255, 255, 255, .1)
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1)
 }
 
 .external-login {
-	border: 1px solid border-btn;
-	background-repeat: no-repeat !important;
-	background-size: 16px 16px !important;
-	background-position: 5px 2px !important;
+	border: 1px solid border-btn
+	background-repeat: no-repeat !important
+	background-size: 16px 16px !important
+	background-position: 5px 2px !important
 }
 .external-login-container .github-login {
 	background-image:url("data:image/png;base64,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YzR4bXBFeHQvMjAwOC0wMi0yOS8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgICB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIKICAgIHhtbG5zOnBsdXM9Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczpHSU1QPSJodHRwOi8vd3d3LmdpbXAub3JnL3htcC8iCiAgICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTUxNzhBMkI5OUEwMTFFMjlBMTVCQzEwNDZBODkwNEQiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODgyZmQ3ZmYtYmM0Ni00M2E4LTkzZDQtNzJlNDc4NjIyOTNlIgogICB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6NzQwZmUyNTUtOGNmZi00Y2U5LWE1OTAtYjdkY2VkMjNiYjQ2IgogICBHSU1QOkFQST0iMi4wIgogICBHSU1QOlBsYXRmb3JtPSJXaW5kb3dzIgogICBHSU1QOlRpbWVTdGFtcD0iMTU5OTc0MjQzNjI5MDAxOCIKICAgR0lNUDpWZXJzaW9uPSIyLjEwLjIwIgogICBkYzpGb3JtYXQ9ImltYWdlL3BuZyIKICAgeG1wOkNyZWF0b3JUb29sPSJHSU1QIDIuMTAiPgogICA8aXB0Y0V4dDpMb2NhdGlvbkNyZWF0ZWQ+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpMb2NhdGlvbkNyZWF0ZWQ+CiAgIDxpcHRjRXh0OkxvY2F0aW9uU2hvd24+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpMb2NhdGlvblNob3duPgogICA8aXB0Y0V4dDpBcnR3b3JrT3JPYmplY3Q+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpBcnR3b3JrT3JPYmplY3Q+CiAgIDxpcHRjRXh0OlJlZ2lzdHJ5SWQ+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpSZWdpc3RyeUlkPgogICA8eG1wTU06SGlzdG9yeT4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJzYXZlZCIKICAgICAgc3RFdnQ6Y2hhbmdlZD0iLyIKICAgICAgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpmYmE2MjhjZi1jNGQ1LTQ2OTQtODkxOS1jMjg1NGM0Yjg5OGYiCiAgICAgIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkdpbXAgMi4xMCAoV2luZG93cykiCiAgICAgIHN0RXZ0OndoZW49IjIwMjAtMDktMTBUMTQ6NTM6NTYiLz4KICAgIDwvcmRmOlNlcT4KICAgPC94bXBNTTpIaXN0b3J5PgogICA8eG1wTU06RGVyaXZlZEZyb20KICAgIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTUxNzhBMjk5OUEwMTFFMjlBMTVCQzEwNDZBODkwNEQiCiAgICBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkU1MTc4QTI4OTlBMDExRTI5QTE1QkMxMDQ2QTg5MDREIi8+CiAgIDxwbHVzOkltYWdlU3VwcGxpZXI+CiAgICA8cmRmOlNlcS8+CiAgIDwvcGx1czpJbWFnZVN1cHBsaWVyPgogICA8cGx1czpJbWFnZUNyZWF0b3I+CiAgICA8cmRmOlNlcS8+CiAgIDwvcGx1czpJbWFnZUNyZWF0b3I+CiAgIDxwbHVzOkNvcHlyaWdodE93bmVyPgogICAgPHJkZjpTZXEvPgogICA8L3BsdXM6Q29weXJpZ2h0T3duZXI+CiAgIDxwbHVzOkxpY2Vuc29yPgogICAgPHJkZjpTZXEvPgogICA8L3BsdXM6TGljZW5zb3I+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz7Yke/zAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5AkKDDU4oIXybQAAAxZJREFUWMPN11+IF1UUB/DPThtluJYSd64EtVEUBBpm9lQPLVEh4ZL2EPTY9u8hCCwIe6gI1kCTiqAIeuxt1UqCIDEIpYfaFvLBinLRkmZ+iuUfwv7Y9nJ/NP6Y2WZ//RY6MA9zzr3f8z1n7jn3zJCWUnTKKzGOO7Ea12JpMp/FLL7CJ3g/hvxEG9yhFo7X4FlsxHBLvn9iF16OIZ/pi0DRKS/HdjzchmiDzOEdPB1Dfqo1gRT1zpTmQcgsNtVlY6jG+Rh2Y5nBymncH0O+r5FA0SnXYt8iOK+SGIshn+4qsorz5ZjqcX4oHabTfTrblTC6sgxTydeFBPAKRntAJmPINyFgAmWl7A7i0/QcTDppzQRC2jvZgzmafP3zCYpOeSs+r4libQz5lz2VsRLfxpD/1fP5MtyAn6onvuiUt2C6BntdDPkX3bre0pDGi6ovCbi2nBKhr/8NoyJbsDErOmXEhoZFNw3g4DVhbCg6ZcxSe61j+SP2DIDAHvzQkJnxDGMNG5+PIT/5X70njBcazGMZVtUYzqdOOCjZmTB7ZVVWU3pwrKl395mFUzhWYxrNsKTG8PsidME/anRLsobF+SIQCHXKDGdq9CNFpwyD8pywRmpMZzIcbth37wCjb8I6nDW0SdhcdMrhAUQ/jM0N5ukMexuMq7FtANFvS1h1sneo6JQjKHBZw6IpPBlDXiww8pV4HQ80LPkVsXsbvonHK4w/xEu4o1JC7+FjzGAmhvx8TarX4Wbcjftw8Twc34ohf6JL4Gp8g0vTIPkM3kh3/W09G3en+W6uh8BQso23SNA53BhDfjRLneootlZmhO1YgwdrLpIdvc4Txhx2tPxCW5PPCyaiSRyovL8YQz6bDtAEnsM9+Gwe4EMtnB+oTkm9Q2nEflyXVE/FkL+2gIN3BX6eZ8n3uL16oOvG8mtSaV6fVPvxAY4j4tUY8nN9EPgOd8WQH2nzY7IC7zZ0sOUx5L8skMBHeKhuvsjmGSLW45EUeb9yAo9ifdNw0+bndCkeS88KXBVD/lvD2kvSvX8Sb6daP+v/LH8DK5b3MVUbKO4AAAAASUVORK5CYII=")
@@ -503,72 +506,72 @@ form.new_user input[type="text"], form.new_user input[type="email"], form.new_us
 
 //
 .tabs>*:not(.current) a {
-	margin-top: unset;
-	padding-top: unset;
+	margin-top: unset
+	padding-top: unset
 }
 .tabs .current {
-	border-top: none;
+	border-top: none
 }
 .tabs>*>* {
-	padding: 0.25em .5em .5em!important;
+	padding: 0.25em .5em .5em!important
 }
 .current {
-	font-weight: bold;
+	font-weight: bold
 }
 
 .PageControls {
-	margin: 0px;
+	margin: 0px
 }
 
 #Content .HomepageTitle {
-	border-top: none;
-	margin: 0px;
-	padding: 0px;
+	border-top: none
+	margin: 0px
+	padding: 0px
 }
 
 img[src*="images/defaulticon.png"] {
-	opacity: 0.5;
+	opacity: 0.5
 }
 
 if scrollbar {
 	//chrome
 	::-webkit-scrollbar {
-		width: 8px;
-		background-color: rgba(0, 0, 0, 0);
+		width: 8px
+		background-color: rgba(0, 0, 0, 0)
 	} 
 	::-webkit-scrollbar-thumb {
-		background-color: #444;
+		background-color: #444
 	}
 	::-webkit-scrollbar-thumb:hover {
-		background: #777 !important;
+		background: #777 !important
 	}
 	::-webkit-scrollbar-corner {
-		background: #444;
+		background: #444
 	}
 	//firefox
 	html {
-		scrollbar-color: #444 bg !important;
-		scrollbar-width: thin !important;
+		scrollbar-color: #444 bg !important
+		scrollbar-width: thin !important
 	}
 }
 
 //ads
 div#cf, div#cf span.cf-wrapper,
 [data-ea-publisher].loaded .ea-content, [data-ea-type].loaded .ea-content {
-	background-color: rgba(255, 255, 255, .03) !important;
+	background-color: rgba(255, 255, 255, .03) !important
 }
 div#cf span.cf-wrapper span.cf-text,
 div#cf span.cf-wrapper a.cf-text,
 div#cf span.cf-wrapper a.cf-powered-by {
-	color: hsla(0,0%,100%,.7) !important;
+	color: hsla(0,0%,100%,.7) !important
 }
 div#cf span.cf-wrapper a.cf-text span.cf-cta,
 [data-ea-publisher].loaded .ea-content a:link, [data-ea-type].loaded .ea-content a:link,
 [data-ea-publisher].loaded .ea-content, [data-ea-type].loaded .ea-content {
-	color: #fff !important;
+	color: #fff !important
 }
 #script-show-info-ad #carbonads {
-	background-color: unset;
+	background-color: unset
 }
 
 }
