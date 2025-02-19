@@ -1,52 +1,53 @@
 /* ==UserStyle==
-@name           GreasyFork - Dark Theme
-@namespace      https://greasyfork.org/en/users/124677-pabli
-@version        1.2.15
-@description    Customizable Dark theme For GreasyFork.org
-@author         Pabli
-@license        CC-BY-SA-4.0
-@homepageURL    https://greasyfork.org/scripts/395180-greasyfork-dark-theme
-@supportURL     https://greasyfork.org/scripts/395180-greasyfork-dark-theme/feedback
-@preprocessor   stylus
-@var            number   maxwidth         "Width Site (px)"         ['px', 1200, 0, null, 1]
-@var            select   theme            "Syntax theme"            ["Tomorrow-Night-Bright", 
-                                                                     "Tomorrow-Night-Eighties", 
-                                                                     "Tomorrow-Night-Blue", 
-                                                                     "Tomorrow-Night", 
-                                                                     "Vibrant-Ink", 
-                                                                     "Hemisu-Dark", 
-                                                                     "Tranquil-Heart", 
-                                                                     "Atelier-Cave-Dark", 
-                                                                     "Atelier-Dune-Dark", 
-                                                                     "Atelier-Estuary-Dark", 
-                                                                     "Atelier-Forest-Dark", 
-                                                                     "Atelier-Heath-Dark", 
-                                                                     "Atelier-Lakeside-Dark", 
-                                                                     "Atelier-Plateau-Dark", 
-                                                                     "Atelier-Savanna-Dark", 
-                                                                     "Atelier-Seaside-Dark", 
-                                                                     "Atelier-Sulphurpool-Dark", 
-                                                                     "Sunburst", 
-                                                                     "Desert", 
-                                                                     "Sons-Of-Obsidian"]
-@var            checkbox wrap             "Code wrap"               1
-@var            checkbox scrollbar        "Dark Scroll Bar"         1
-@var            color    bg-header        "Header background"       #640000
-@var            color    t-header         "Header text"             #fafafa
-@var            color    bg               "Background"              #111111
-@var            color    t-1              "Main text"               #fafafa
-@var            color    t-2              "Second text"             #aeaeae
-@var            color    t-link           "Link"                    #ff7070
-@var            color    bg-sidebar       "Sidebar"                 #1a1a1a
-@var            color    bg-sidebar-btn   "Sidebar button"          #510909
-@var            color    bg-sidebar-btn-h "Sidebar button hover"    #323232
-@var            color    bg-btn           "Button"                  #1a1a1a
-@var            color    bg-btn-h         "Button hover"            #323232
-@var            color    t-btn            "Button text"             #fafafa
-@var            color    border-btn       "Button border"           rgba(255, 255, 255, 0.1)
-@var            color    border-btn-h     "Button border hover"     rgba(255, 255, 255, 0.2)
-@var            color    bg-textarea      "Text area background"    #1a1a1a
-@var            color    bg-usercontent   "User content background" rgba(0, 0, 0, 0)
+@name         GreasyFork - Dark Theme
+@description  Customizable Dark theme For GreasyFork.org
+@version      1.2.16
+@author       Pabli
+@namespace    https://greasyfork.org/en/users/124677-pabli
+@homepageURL  https://greasyfork.org/scripts/395180-greasyfork-dark-theme
+@supportURL   https://greasyfork.org/scripts/395180-greasyfork-dark-theme/feedback
+@license      CC-BY-SA-4.0
+@preprocessor stylus
+@var number   maxwidth         "Width Site (px)"         [1200, 0, null, 1, "px"]
+@var select   theme            "Syntax theme"            ["Tomorrow-Night-Bright", 
+                                                          "Tomorrow-Night-Eighties", 
+                                                          "Tomorrow-Night-Blue", 
+                                                          "Tomorrow-Night", 
+                                                          "Vibrant-Ink", 
+                                                          "Hemisu-Dark", 
+                                                          "Tranquil-Heart", 
+                                                          "Atelier-Cave-Dark", 
+                                                          "Atelier-Dune-Dark", 
+                                                          "Atelier-Estuary-Dark", 
+                                                          "Atelier-Forest-Dark", 
+                                                          "Atelier-Heath-Dark", 
+                                                          "Atelier-Lakeside-Dark", 
+                                                          "Atelier-Plateau-Dark", 
+                                                          "Atelier-Savanna-Dark", 
+                                                          "Atelier-Seaside-Dark", 
+                                                          "Atelier-Sulphurpool-Dark", 
+                                                          "Sunburst", 
+                                                          "Desert", 
+                                                          "Sons-Of-Obsidian"]
+@var checkbox wrap             "Code wrap"               1
+@var number   tab              "Tab size"                [4, 0, null, 1]
+@var checkbox scrollbar        "Dark Scroll Bar"         1
+@var color    bg-header        "Header background"       #640000
+@var color    t-header         "Header text"             #fafafa
+@var color    bg               "Background"              #111111
+@var color    t-1              "Main text"               #fafafa
+@var color    t-2              "Second text"             #aeaeae
+@var color    t-link           "Link"                    #ff7070
+@var color    bg-sidebar       "Sidebar"                 #1a1a1a
+@var color    bg-sidebar-btn   "Sidebar button"          #510909
+@var color    bg-sidebar-btn-h "Sidebar button hover"    #323232
+@var color    bg-btn           "Button"                  #1a1a1a
+@var color    bg-btn-h         "Button hover"            #323232
+@var color    t-btn            "Button text"             #fafafa
+@var color    border-btn       "Button border"           rgba(255, 255, 255, 0.1)
+@var color    border-btn-h     "Button border hover"     rgba(255, 255, 255, 0.2)
+@var color    bg-textarea      "Text area background"    #1a1a1a
+@var color    bg-usercontent   "User content background" rgba(0, 0, 0, 0)
 ==/UserStyle== */
 
 @-moz-document domain("greasyfork.org"), domain("sleazyfork.org") {
@@ -146,7 +147,7 @@ hr {
 .sidebar-search input[type=submit], .home-search input[type=submit], .search-submit, .SiteSearch .Button {
 	color: transparent !important
 	opacity: 1
-	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABYklEQVQ4T5XTu2qVQRTF8d8CMdp7AW9V7MwLaNKo7+ANe1ERK7Hy2oidmOALiMlDKIIS8QEsRLFRYqG9lyBsmThHviMnB7ObGT5m/t9ae6+JQVXVAi6hrbvwFS+xmGR1eHa0T9tU1TY8xIVJh/q3JVxN8mt4ZgR41C9/wz08wSccxDlcx04sJbk8BuiyX6BdPpHk9b8qquoonnbI/NBOqmoFp3Ajyd3NLFTVLdzEcpKzf3tQVWvYh9kkH6YAZvEea0kODAE/sR0zSdanAGbwA+tJ2n6jmoX/VXAY7/A5yf4hYBmnm78kd6YouN36hJUkZ4aA+R6W7ziZ5NWEKRzrU2jSF8am0IPUQnIRDXIfj/ERh3Ae17ADXzCXpK1/ejBI4oMOmeSieqz34E3PywZkAzCqqmpSR29hb7/UQrbYR/gMR4aQMcBmDRz8YDcaZA5vcXxLgG632Rgpeb5lwADSnsCV30xRiAuwE+OqAAAAAElFTkSuQmCC') no-repeat center !important
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABYklEQVQ4T5XTu2qVQRTF8d8CMdp7AW9V7MwLaNKo7+ANe1ERK7Hy2oidmOALiMlDKIIS8QEsRLFRYqG9lyBsmThHviMnB7ObGT5m/t9ae6+JQVXVAi6hrbvwFS+xmGR1eHa0T9tU1TY8xIVJh/q3JVxN8mt4ZgR41C9/wz08wSccxDlcx04sJbk8BuiyX6BdPpHk9b8qquoonnbI/NBOqmoFp3Ajyd3NLFTVLdzEcpKzf3tQVWvYh9kkH6YAZvEea0kODAE/sR0zSdanAGbwA+tJ2n6jmoX/VXAY7/A5yf4hYBmnm78kd6YouN36hJUkZ4aA+R6W7ziZ5NWEKRzrU2jSF8am0IPUQnIRDXIfj/ERh3Ae17ADXzCXpK1/ejBI4oMOmeSieqz34E3PywZkAzCqqmpSR29hb7/UQrbYR/gMR4aQMcBmDRz8YDcaZA5vcXxLgG632Rgpeb5lwADSnsCV30xRiAuwE+OqAAAAAElFTkSuQmCC") no-repeat center !important
 	border: none !important
 	cursor: pointer
 }
@@ -279,6 +280,11 @@ hr {
 }
 .bad-rating-count {
 	color: #ff8080
+}
+
+.expander {
+  color: t-link
+  background-color: bg-btn
 }
 
 // pagination buttons
@@ -492,6 +498,9 @@ if wrap {
 	.prettyprint {
 		width: unset
 	}
+}
+pre, code {
+	tab-size: tab
 }
 
 form.external-login-form,
